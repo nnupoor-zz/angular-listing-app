@@ -5,7 +5,7 @@
       <!--Body content-->
 
       <ul class="phones">
-        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp:reverse  track by $index"
+        <li ng-repeat="phone in phones | filter:search | orderBy:orderProp:reverse  track by $index"
             class="thumbnail phone-listing">
           <a href="" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
           <div class="phonelist name">{{phone.name}}</div>

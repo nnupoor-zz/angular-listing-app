@@ -5,7 +5,7 @@
       <!--Body content-->
 
       <div class="phones">
-        <div ng-repeat="phone in phones | filter:query | orderBy:orderProp:reverse"
+        <div ng-repeat="phone in phones | filter:search | orderBy:orderProp:reverse"
             class="thumbnail phone-listing col-md-4 col-sm-6 panel panel-default ">
 
           <a href="" class="thumb"><img ng-src="{{phone.imageUrl}}" class="gridImg"></a>
